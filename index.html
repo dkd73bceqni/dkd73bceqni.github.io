@@ -1,0 +1,1545 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黑兽2樱花动漫 - 品牌站_原创高清动画内容生态</title>
+<meta name="description" content="黑兽2樱花动漫官方网站，专注原创动画内容生态，汇聚高清正版动画短片、创作者故事与行业深度解析，持续运营的动画品牌社区。">
+<meta name="keywords" content="黑兽2樱花动漫,动画品牌,原创动画,内容生态,创作者社区">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a2338'/%3E%3Cpath d='M18 44V20l14 12 14-12v24' fill='none' stroke='%23ff5f7e' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='50' r='3' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+:root{
+  --hs2-bg:#0f1420;
+  --hs2-bg-soft:#161d2d;
+  --hs2-card:#1b2334;
+  --hs2-line:rgba(255,255,255,.09);
+  --hs2-ink:#eef2fb;
+  --hs2-ink-dim:#a7b2c8;
+  --hs2-pink:#ff5f7e;
+  --hs2-gold:#ffd166;
+  --hs2-cyan:#4cc9f0;
+  --hs2-radius:16px;
+  --hs2-shadow:0 18px 40px -18px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:118px}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--hs2-bg);
+  color:var(--hs2-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+/* ===== 吸顶区：公告条 + 页头 ===== */
+.hs2-sticky-shell{position:sticky;top:0;z-index:900}
+.hs2-announce{
+  background:linear-gradient(90deg,#241b3a,#3a1d3f 45%,#1d2438);
+  border-bottom:1px solid var(--hs2-line);
+  font-size:13px;
+  padding:8px 18px;
+  display:flex;align-items:center;gap:12px;
+  overflow:hidden;white-space:nowrap;
+}
+.hs2-announce-badge{
+  flex:0 0 auto;
+  background:var(--hs2-pink);color:#fff;
+  font-size:11px;font-weight:700;letter-spacing:1px;
+  padding:2px 8px;border-radius:99px;
+}
+.hs2-announce-track{display:flex;gap:44px;animation:hs2-marquee 30s linear infinite}
+.hs2-announce-track span{color:var(--hs2-ink-dim)}
+.hs2-announce-track b{color:var(--hs2-gold);font-weight:600}
+@keyframes hs2-marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.hs2-announce-track{animation:none}}
+
+.hs2-header{
+  background:rgba(15,20,32,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--hs2-line);
+}
+.hs2-header-inner{
+  max-width:1240px;margin:0 auto;padding:12px 22px;
+  display:flex;align-items:center;gap:20px;
+}
+.hs2-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px;flex:0 0 auto}
+.hs2-logo-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(135deg,var(--hs2-pink),#8a4bff);
+  display:grid;place-items:center;font-size:19px;color:#fff;font-weight:900;
+  box-shadow:0 8px 20px -8px var(--hs2-pink);
+}
+.hs2-logo em{font-style:normal;color:var(--hs2-pink)}
+.hs2-nav{display:flex;gap:4px;margin-left:8px;flex:1 1 auto;flex-wrap:wrap}
+.hs2-nav a{
+  font-size:14px;color:var(--hs2-ink-dim);padding:7px 13px;border-radius:9px;
+  transition:.22s;white-space:nowrap;
+}
+.hs2-nav a:hover{color:#fff;background:rgba(255,255,255,.07)}
+.hs2-search{position:relative;flex:0 0 220px}
+.hs2-search input{
+  width:100%;padding:9px 36px 9px 14px;border-radius:99px;
+  background:rgba(255,255,255,.06);border:1px solid var(--hs2-line);
+  color:var(--hs2-ink);font-size:13px;outline:none;transition:.22s;
+}
+.hs2-search input:focus{border-color:var(--hs2-pink);background:rgba(255,95,126,.08)}
+.hs2-search button{
+  position:absolute;right:5px;top:50%;transform:translateY(-50%);
+  width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+  color:var(--hs2-ink-dim);font-size:14px;
+}
+.hs2-search button:hover{color:var(--hs2-pink)}
+.hs2-search-tip{
+  position:absolute;left:0;right:0;top:calc(100% + 8px);
+  background:var(--hs2-card);border:1px solid var(--hs2-line);border-radius:12px;
+  padding:8px;font-size:13px;color:var(--hs2-ink-dim);display:none;
+  box-shadow:var(--hs2-shadow);
+}
+.hs2-search-tip.on{display:block}
+.hs2-search-tip b{color:var(--hs2-gold)}
+.hs2-burger{display:none;font-size:22px;padding:6px 10px;border-radius:9px}
+.hs2-burger:hover{background:rgba(255,255,255,.08)}
+.hs2-mobile-nav{display:none;padding:6px 22px 16px;border-top:1px solid var(--hs2-line)}
+.hs2-mobile-nav.on{display:block}
+.hs2-mobile-nav a{display:block;padding:11px 6px;font-size:15px;color:var(--hs2-ink-dim);border-bottom:1px dashed var(--hs2-line)}
+.hs2-mobile-nav a:last-child{border-bottom:none}
+
+@media (max-width:900px){
+  .hs2-nav,.hs2-search{display:none}
+  .hs2-burger{display:block;margin-left:auto}
+  html{scroll-padding-top:104px}
+}
+
+/* ===== 通用容器 ===== */
+.hs2-wrap{max-width:1240px;margin:0 auto;padding:0 22px}
+.hs2-section{padding:64px 0}
+.hs2-section-head{margin-bottom:34px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.hs2-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:2px;color:var(--hs2-gold);
+  text-transform:uppercase;margin-bottom:10px;
+}
+.hs2-eyebrow::before{content:"";width:22px;height:2px;background:var(--hs2-gold);border-radius:2px}
+.hs2-h2{font-size:clamp(22px,3vw,32px);line-height:1.35;font-weight:800;letter-spacing:.5px}
+.hs2-h2 span{color:var(--hs2-pink)}
+.hs2-sub{color:var(--hs2-ink-dim);font-size:14.5px;max-width:640px;margin-top:8px}
+.hs2-more{
+  font-size:13.5px;color:var(--hs2-ink-dim);border:1px solid var(--hs2-line);
+  padding:7px 16px;border-radius:99px;transition:.22s;white-space:nowrap;
+}
+.hs2-more:hover{color:var(--hs2-pink);border-color:var(--hs2-pink)}
+
+/* ===== 首屏 ===== */
+.hs2-hero{padding:46px 0 20px;position:relative;overflow:hidden}
+.hs2-hero::before{
+  content:"";position:absolute;inset:-20% -10% auto;height:560px;
+  background:radial-gradient(60% 60% at 22% 10%,rgba(255,95,126,.20),transparent 62%),
+             radial-gradient(50% 50% at 84% 18%,rgba(76,201,240,.16),transparent 60%);
+  pointer-events:none;
+}
+.hs2-hero-grid{
+  position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;
+}
+.hs2-h1{
+  font-size:clamp(30px,4.4vw,50px);line-height:1.18;font-weight:900;letter-spacing:.5px;
+  margin:10px 0 18px;
+}
+.hs2-h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,var(--hs2-pink),var(--hs2-gold));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hs2-hero-lead{color:var(--hs2-ink-dim);font-size:15.5px;max-width:560px}
+.hs2-hero-lead strong{color:var(--hs2-ink);font-weight:600}
+.hs2-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 0}
+.hs2-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:99px;font-size:14.5px;font-weight:600;
+  transition:.22s;
+}
+.hs2-btn-primary{
+  background:linear-gradient(100deg,var(--hs2-pink),#b84bff);
+  color:#fff;box-shadow:0 14px 30px -14px var(--hs2-pink);
+}
+.hs2-btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 36px -14px var(--hs2-pink)}
+.hs2-btn-ghost{border:1px solid var(--hs2-line);color:var(--hs2-ink)}
+.hs2-btn-ghost:hover{border-color:var(--hs2-cyan);color:var(--hs2-cyan)}
+.hs2-hero-stats{display:flex;gap:34px;margin-top:34px;flex-wrap:wrap}
+.hs2-hero-stats div{line-height:1.3}
+.hs2-hero-stats b{display:block;font-size:26px;font-weight:900;color:var(--hs2-gold);font-variant-numeric:tabular-nums}
+.hs2-hero-stats span{font-size:12.5px;color:var(--hs2-ink-dim);letter-spacing:.5px}
+
+.hs2-hero-art{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--hs2-shadow);border:1px solid var(--hs2-line)}
+.hs2-hero-art img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.hs2-hero-art-tag{
+  position:absolute;left:16px;top:16px;
+  background:rgba(15,20,32,.78);backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.16);
+  padding:5px 13px;border-radius:99px;font-size:12px;letter-spacing:1px;color:var(--hs2-gold);
+}
+.hs2-hero-art-cap{
+  position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(transparent,rgba(8,11,18,.9));
+  padding:44px 18px 16px;font-size:13.5px;color:var(--hs2-ink-dim);
+}
+.hs2-hero-art-cap b{display:block;color:#fff;font-size:15.5px;margin-bottom:2px}
+
+@media (max-width:900px){
+  .hs2-hero-grid{grid-template-columns:1fr;gap:30px}
+  .hs2-hero-stats{gap:22px}
+}
+
+/* ===== 关键词深度解析 ===== */
+.hs2-about{background:linear-gradient(180deg,transparent,rgba(255,255,255,.02),transparent)}
+.hs2-about-card{
+  background:var(--hs2-bg-soft);border:1px solid var(--hs2-line);border-radius:22px;
+  padding:clamp(22px,3.2vw,44px);
+}
+.hs2-about-cols{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:24px}
+.hs2-about h3{font-size:17px;margin-bottom:10px;color:var(--hs2-gold);font-weight:700}
+.hs2-about p{color:var(--hs2-ink-dim);font-size:14.5px;margin-bottom:14px}
+.hs2-about p strong{color:var(--hs2-ink)}
+.hs2-about-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.hs2-about-tags span{
+  font-size:12.5px;padding:5px 13px;border-radius:99px;
+  background:rgba(255,95,126,.10);color:#ff9db0;border:1px solid rgba(255,95,126,.22);
+}
+@media (max-width:780px){.hs2-about-cols{grid-template-columns:1fr;gap:6px}}
+
+/* ===== 焦点内容 ===== */
+.hs2-feature-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:20px}
+.hs2-focus-main{
+  position:relative;border-radius:20px;overflow:hidden;
+  border:1px solid var(--hs2-line);box-shadow:var(--hs2-shadow);
+}
+.hs2-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.5s}
+.hs2-focus-main:hover img{transform:scale(1.04)}
+.hs2-focus-main-body{
+  position:absolute;inset:auto 0 0 0;
+  background:linear-gradient(transparent,rgba(9,12,19,.94) 55%);
+  padding:70px 22px 20px;
+}
+.hs2-chip{
+  display:inline-block;font-size:11.5px;letter-spacing:1px;
+  padding:3px 11px;border-radius:99px;background:var(--hs2-pink);color:#fff;font-weight:700;
+}
+.hs2-focus-main-body h3{font-size:20px;margin:10px 0 6px;font-weight:800;line-height:1.4}
+.hs2-focus-main-body p{font-size:13.5px;color:var(--hs2-ink-dim)}
+.hs2-focus-meta{display:flex;gap:16px;font-size:12.5px;color:var(--hs2-ink-dim);margin-top:12px;flex-wrap:wrap}
+.hs2-focus-side{display:grid;gap:14px}
+.hs2-mini{
+  display:grid;grid-template-columns:118px 1fr;gap:14px;
+  background:var(--hs2-card);border:1px solid var(--hs2-line);border-radius:14px;
+  padding:10px;transition:.24s;cursor:pointer;
+}
+.hs2-mini:hover{transform:translateX(4px);border-color:rgba(255,95,126,.4)}
+.hs2-mini img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:9px}
+.hs2-mini h4{font-size:14px;font-weight:700;line-height:1.45;margin-bottom:4px}
+.hs2-mini span{font-size:12px;color:var(--hs2-ink-dim)}
+@media (max-width:900px){.hs2-feature-grid{grid-template-columns:1fr}}
+
+/* ===== 视频流 ===== */
+.hs2-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.hs2-filter button{
+  font-size:13px;padding:7px 16px;border-radius:99px;
+  border:1px solid var(--hs2-line);color:var(--hs2-ink-dim);transition:.22s;
+}
+.hs2-filter button:hover{color:#fff;border-color:rgba(255,255,255,.28)}
+.hs2-filter button.on{background:var(--hs2-pink);border-color:var(--hs2-pink);color:#fff;font-weight:600}
+.hs2-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hs2-video{
+  background:var(--hs2-card);border:1px solid var(--hs2-line);border-radius:18px;
+  overflow:hidden;transition:.26s;display:flex;flex-direction:column;
+}
+.hs2-video:hover{transform:translateY(-5px);border-color:rgba(255,95,126,.42);box-shadow:var(--hs2-shadow)}
+.hs2-video-cover{position:relative;overflow:hidden}
+.hs2-video-cover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.5s}
+.hs2-video:hover .hs2-video-cover img{transform:scale(1.05)}
+.hs2-video-play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:linear-gradient(transparent 40%,rgba(9,12,19,.55));
+  opacity:0;transition:.28s;
+}
+.hs2-video:hover .hs2-video-play{opacity:1}
+.hs2-video-play i{
+  width:48px;height:48px;border-radius:50%;
+  background:rgba(255,95,126,.92);display:grid;place-items:center;
+  font-style:normal;color:#fff;font-size:17px;padding-left:3px;
+  box-shadow:0 10px 24px -6px rgba(255,95,126,.8);
+}
+.hs2-video-dur{
+  position:absolute;right:9px;bottom:9px;
+  background:rgba(9,12,19,.82);font-size:11.5px;padding:2px 8px;border-radius:6px;
+  letter-spacing:.5px;
+}
+.hs2-video-tagcorner{
+  position:absolute;left:9px;top:9px;font-size:11px;padding:2px 9px;
+  border-radius:6px;background:rgba(255,209,102,.92);color:#2a2105;font-weight:700;
+}
+.hs2-video-body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
+.hs2-video-body h3{font-size:15.5px;font-weight:700;line-height:1.5;margin-bottom:6px}
+.hs2-video-body p{font-size:12.8px;color:var(--hs2-ink-dim);flex:1;margin-bottom:12px}
+.hs2-video-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.hs2-video-tags span{font-size:11.5px;color:#8fd6ee;background:rgba(76,201,240,.10);padding:2px 9px;border-radius:99px}
+.hs2-video-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding-top:11px;border-top:1px dashed var(--hs2-line);font-size:12.5px;color:var(--hs2-ink-dim);
+}
+.hs2-video-author{display:flex;align-items:center;gap:7px}
+.hs2-avatar{
+  width:24px;height:24px;border-radius:50%;display:grid;place-items:center;
+  font-size:11.5px;font-weight:800;color:#fff;flex:0 0 auto;
+}
+.hs2-actions{display:flex;gap:4px}
+.hs2-act{
+  display:flex;align-items:center;gap:4px;font-size:12px;padding:3px 7px;border-radius:7px;transition:.2s;
+}
+.hs2-act:hover{background:rgba(255,255,255,.08);color:#fff}
+.hs2-act.liked{color:var(--hs2-pink)}
+.hs2-act.saved{color:var(--hs2-gold)}
+@media (max-width:980px){.hs2-video-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.hs2-video-grid{grid-template-columns:1fr}}
+
+/* ===== 专题 ===== */
+.hs2-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hs2-topic{
+  position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--hs2-line);
+  min-height:230px;display:flex;align-items:flex-end;transition:.26s;
+}
+.hs2-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.5s}
+.hs2-topic:hover img{transform:scale(1.06)}
+.hs2-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(9,12,19,.92))}
+.hs2-topic-body{position:relative;z-index:2;padding:18px}
+.hs2-topic-body h3{font-size:17px;font-weight:800;margin-bottom:6px}
+.hs2-topic-body p{font-size:12.8px;color:#c3cbdb}
+.hs2-topic-state{
+  display:inline-block;font-size:11px;margin-top:10px;padding:2px 10px;border-radius:99px;
+  background:rgba(76,201,240,.16);color:#9de1f5;border:1px solid rgba(76,201,240,.3);
+}
+@media (max-width:900px){.hs2-topic-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.hs2-topic-grid{grid-template-columns:1fr}}
+
+/* ===== 创作者 ===== */
+.hs2-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.hs2-creator{
+  background:var(--hs2-bg-soft);border:1px solid var(--hs2-line);border-radius:18px;
+  padding:22px 18px;text-align:center;transition:.26s;cursor:pointer;
+}
+.hs2-creator:hover{transform:translateY(-5px);border-color:rgba(255,209,102,.42)}
+.hs2-creator-avatar{
+  width:64px;height:64px;border-radius:50%;margin:0 auto 12px;
+  display:grid;place-items:center;font-size:23px;font-weight:900;color:#fff;
+  box-shadow:0 12px 26px -12px rgba(0,0,0,.9);
+}
+.hs2-creator h3{font-size:15.5px;font-weight:700}
+.hs2-creator .hs2-field{font-size:12.5px;color:var(--hs2-gold);margin:3px 0 9px}
+.hs2-creator p{font-size:12.5px;color:var(--hs2-ink-dim);line-height:1.65;min-height:60px}
+.hs2-creator-nums{display:flex;justify-content:center;gap:14px;margin-top:12px;font-size:12px;color:var(--hs2-ink-dim)}
+.hs2-creator-nums b{color:var(--hs2-ink);display:block;font-size:14px}
+@media (max-width:980px){.hs2-creator-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.hs2-creator-grid{grid-template-columns:1fr}}
+
+/* ===== 作品墙 ===== */
+.hs2-wall{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:132px;gap:14px}
+.hs2-wall figure{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--hs2-line)}
+.hs2-wall img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.hs2-wall figure:hover img{transform:scale(1.07)}
+.hs2-wall figcaption{
+  position:absolute;inset:auto 0 0 0;padding:26px 12px 10px;font-size:12px;
+  background:linear-gradient(transparent,rgba(9,12,19,.9));color:#dfe5f1;
+  opacity:0;transition:.28s;
+}
+.hs2-wall figure:hover figcaption{opacity:1}
+.hs2-wall .hs2-w-lg{grid-column:span 2;grid-row:span 2}
+.hs2-wall .hs2-w-md{grid-column:span 2;grid-row:span 1}
+.hs2-wall .hs2-w-sm{grid-column:span 1;grid-row:span 1}
+@media (max-width:880px){
+  .hs2-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px}
+  .hs2-wall .hs2-w-lg{grid-column:span 2;grid-row:span 2}
+  .hs2-wall .hs2-w-md{grid-column:span 2}
+}
+
+/* ===== 故事/随笔 ===== */
+.hs2-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hs2-story{
+  background:var(--hs2-card);border:1px solid var(--hs2-line);border-radius:18px;
+  padding:24px 20px;display:flex;flex-direction:column;gap:10px;
+}
+.hs2-story .hs2-quote{font-size:26px;line-height:1;color:var(--hs2-pink);font-weight:900}
+.hs2-story h3{font-size:16px;font-weight:700;line-height:1.5}
+.hs2-story p{font-size:13px;color:var(--hs2-ink-dim);flex:1}
+.hs2-story-foot{font-size:12.5px;color:var(--hs2-gold);display:flex;justify-content:space-between;align-items:center}
+@media (max-width:900px){.hs2-story-grid{grid-template-columns:1fr}}
+
+/* ===== 评价 ===== */
+.hs2-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hs2-review{
+  background:var(--hs2-bg-soft);border:1px solid var(--hs2-line);border-radius:16px;
+  padding:18px;font-size:13.2px;color:var(--hs2-ink-dim);display:flex;flex-direction:column;gap:10px;
+}
+.hs2-review-head{display:flex;align-items:center;gap:9px}
+.hs2-review-head b{color:var(--hs2-ink);font-size:13.5px;font-weight:700}
+.hs2-review-head span{font-size:11.5px;color:#7c879c}
+.hs2-stars{color:var(--hs2-gold);font-size:12px;letter-spacing:2px}
+@media (max-width:900px){.hs2-review-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.hs2-review-grid{grid-template-columns:1fr}}
+
+/* ===== 动态 + FAQ ===== */
+.hs2-two-col{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.hs2-log-list{display:flex;flex-direction:column;gap:12px}
+.hs2-log{
+  display:flex;gap:14px;background:var(--hs2-card);border:1px solid var(--hs2-line);
+  border-radius:14px;padding:14px 16px;transition:.22s;
+}
+.hs2-log:hover{border-color:rgba(76,201,240,.4)}
+.hs2-log-date{
+  flex:0 0 58px;font-size:12px;color:var(--hs2-cyan);font-weight:700;
+  letter-spacing:.5px;padding-top:2px;
+}
+.hs2-log h3{font-size:14.2px;font-weight:700;margin-bottom:3px}
+.hs2-log p{font-size:12.5px;color:var(--hs2-ink-dim)}
+.hs2-faq details{
+  background:var(--hs2-card);border:1px solid var(--hs2-line);border-radius:13px;
+  margin-bottom:10px;overflow:hidden;
+}
+.hs2-faq summary{
+  cursor:pointer;list-style:none;padding:14px 18px;font-size:14px;font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.hs2-faq summary::-webkit-details-marker{display:none}
+.hs2-faq summary::after{content:"+";color:var(--hs2-pink);font-size:19px;font-weight:400;transition:.2s}
+.hs2-faq details[open] summary::after{content:"−"}
+.hs2-faq details p{padding:0 18px 15px;font-size:13px;color:var(--hs2-ink-dim)}
+@media (max-width:880px){.hs2-two-col{grid-template-columns:1fr}}
+
+/* ===== 投稿/联系 ===== */
+.hs2-cta{
+  border-radius:24px;padding:clamp(26px,4vw,52px);
+  background:linear-gradient(115deg,#2a1633,#132236 60%,#122436);
+  border:1px solid rgba(255,95,126,.24);position:relative;overflow:hidden;
+}
+.hs2-cta::before{
+  content:"";position:absolute;right:-80px;top:-80px;width:300px;height:300px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,95,126,.35),transparent 68%);
+}
+.hs2-cta-grid{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:center}
+.hs2-cta h2{font-size:clamp(21px,2.8vw,29px);font-weight:800;line-height:1.4;margin-bottom:12px}
+.hs2-cta p{color:#c0c9da;font-size:14px;margin-bottom:20px}
+.hs2-cta-info{font-size:13.5px;color:#c0c9da;display:flex;flex-direction:column;gap:9px}
+.hs2-cta-info b{color:var(--hs2-gold);font-weight:700}
+@media (max-width:820px){.hs2-cta-grid{grid-template-columns:1fr}}
+
+/* ===== 页脚 ===== */
+.hs2-footer{border-top:1px solid var(--hs2-line);background:#0b1019;padding:48px 0 26px;margin-top:40px}
+.hs2-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.1fr;gap:30px}
+.hs2-footer h4{font-size:14px;font-weight:700;margin-bottom:13px;color:var(--hs2-ink)}
+.hs2-footer p,.hs2-footer a{font-size:13px;color:var(--hs2-ink-dim);line-height:2}
+.hs2-footer a:hover{color:var(--hs2-pink)}
+.hs2-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-weight:800;font-size:17px}
+.hs2-footer-bottom{
+  margin-top:32px;padding-top:20px;border-top:1px solid var(--hs2-line);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12.5px;color:#7c879c;
+}
+@media (max-width:880px){.hs2-footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.hs2-footer-grid{grid-template-columns:1fr}}
+
+/* ===== 弹窗 & Toast ===== */
+.hs2-modal-mask{
+  position:fixed;inset:0;background:rgba(5,8,14,.76);backdrop-filter:blur(4px);
+  display:none;align-items:center;justify-content:center;z-index:1200;padding:20px;
+}
+.hs2-modal-mask.on{display:flex}
+.hs2-modal{
+  background:var(--hs2-bg-soft);border:1px solid var(--hs2-line);border-radius:20px;
+  max-width:520px;width:100%;padding:28px 26px;position:relative;box-shadow:var(--hs2-shadow);
+  max-height:88vh;overflow:auto;
+}
+.hs2-modal h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.hs2-modal .hs2-modal-sub{font-size:13px;color:var(--hs2-ink-dim);margin-bottom:18px}
+.hs2-modal-close{
+  position:absolute;right:16px;top:14px;width:32px;height:32px;border-radius:50%;
+  display:grid;place-items:center;font-size:17px;color:var(--hs2-ink-dim);
+}
+.hs2-modal-close:hover{background:rgba(255,255,255,.09);color:#fff}
+.hs2-field-row{margin-bottom:13px}
+.hs2-field-row label{display:block;font-size:12.5px;color:var(--hs2-ink-dim);margin-bottom:5px}
+.hs2-field-row input,.hs2-field-row textarea,.hs2-field-row select{
+  width:100%;padding:10px 13px;border-radius:10px;font-size:13.5px;
+  background:rgba(255,255,255,.06);border:1px solid var(--hs2-line);color:var(--hs2-ink);
+  outline:none;font-family:inherit;transition:.2s;
+}
+.hs2-field-row input:focus,.hs2-field-row textarea:focus,.hs2-field-row select:focus{border-color:var(--hs2-pink)}
+.hs2-field-row textarea{resize:vertical;min-height:86px}
+.hs2-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.hs2-share-row button{
+  flex:1 1 90px;padding:11px 8px;border-radius:12px;font-size:13px;
+  border:1px solid var(--hs2-line);background:rgba(255,255,255,.05);transition:.2s;
+}
+.hs2-share-row button:hover{border-color:var(--hs2-pink);color:var(--hs2-pink)}
+.hs2-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,24px);
+  background:#20293c;border:1px solid rgba(255,95,126,.45);color:#fff;
+  padding:11px 22px;border-radius:99px;font-size:13.5px;z-index:1500;
+  opacity:0;pointer-events:none;transition:.3s;box-shadow:var(--hs2-shadow);
+}
+.hs2-toast.on{opacity:1;transform:translate(-50%,0)}
+
+.hs2-top-btn{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(135deg,var(--hs2-pink),#8a4bff);color:#fff;
+  display:grid;place-items:center;font-size:18px;z-index:800;
+  box-shadow:0 14px 30px -10px rgba(255,95,126,.8);
+  opacity:0;pointer-events:none;transition:.3s;
+}
+.hs2-top-btn.on{opacity:1;pointer-events:auto}
+.hs2-top-btn:hover{transform:translateY(-3px)}
+
+::selection{background:rgba(255,95,126,.35)}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ================= 吸顶：公告条 + 页头 ================= -->
+<div class="hs2-sticky-shell">
+  <div class="hs2-announce" aria-label="站内公告">
+    <span class="hs2-announce-badge">NEW</span>
+    <div class="hs2-announce-track">
+      <span><b>11月18日</b> 更新 · 「黑兽2樱花动漫」第二季幕后制作特辑上线，共3集</span>
+      <span><b>11月15日</b> 新增 · 创作者激励计划第三期报名开启</span>
+      <span><b>11月12日</b> 发布 · 官方发布角色设定资料集，含12页手稿</span>
+      <span><b>11月08日</b> 更新 · 专题《动画分镜的非典型解法》第四章</span>
+      <span><b>11月18日</b> 更新 · 「黑兽2樱花动漫」第二季幕后制作特辑上线，共3集</span>
+      <span><b>11月15日</b> 新增 · 创作者激励计划第三期报名开启</span>
+      <span><b>11月12日</b> 发布 · 官方发布角色设定资料集，含12页手稿</span>
+      <span><b>11月08日</b> 更新 · 专题《动画分镜的非典型解法》第四章</span>
+    </div>
+  </div>
+
+  <header class="hs2-header">
+    <div class="hs2-header-inner">
+      <a class="hs2-logo" href="#hs2-top">
+        <span class="hs2-logo-mark">黑</span>
+        <span>黑兽2樱花动漫<em>·</em>官网</span>
+      </a>
+      <nav class="hs2-nav" aria-label="主导航">
+        <a href="#hs2-top">首页</a>
+        <a href="#hs2-focus">焦点内容</a>
+        <a href="#hs2-videos">内容库</a>
+        <a href="#hs2-topics">专题企划</a>
+        <a href="#hs2-creators">创作者</a>
+        <a href="#hs2-news">企业动态</a>
+        <a href="#hs2-faq">帮助中心</a>
+        <a href="#hs2-contact">联系我们</a>
+      </nav>
+      <div class="hs2-search">
+        <input id="hs2SearchInput" type="search" placeholder="搜索作品 / 创作者 / 专题" aria-label="站内搜索">
+        <button id="hs2SearchBtn" type="button" aria-label="搜索">搜</button>
+        <div class="hs2-search-tip" id="hs2SearchTip"></div>
+      </div>
+      <button class="hs2-burger" id="hs2Burger" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+    <div class="hs2-mobile-nav" id="hs2MobileNav">
+      <a href="#hs2-top">首页</a>
+      <a href="#hs2-focus">焦点内容</a>
+      <a href="#hs2-videos">内容库</a>
+      <a href="#hs2-topics">专题企划</a>
+      <a href="#hs2-creators">创作者</a>
+      <a href="#hs2-news">企业动态</a>
+      <a href="#hs2-faq">帮助中心</a>
+      <a href="#hs2-contact">联系我们</a>
+    </div>
+  </header>
+</div>
+
+<main id="hs2-top">
+
+  <!-- ================= 首屏 ================= -->
+  <section class="hs2-hero">
+    <div class="hs2-wrap">
+      <div class="hs2-hero-grid">
+        <div>
+          <div class="hs2-eyebrow">BRAND OFFICIAL SITE · 品牌官网</div>
+          <h1 class="hs2-h1">黑兽2樱花动漫<br><em>动画内容生态</em>官方门户</h1>
+          <p class="hs2-hero-lead">
+            作为深耕原创动画领域的<strong>黑兽2樱花动漫</strong>品牌，我们以官方网站为载体，持续搭建高品质内容生态：正版高清动画短片、幕后制作纪实、创作者访谈与行业观察，在这里被认真归档、被真实讨论。企业自2018年持续运营至今，坚持以匠心打磨每一帧画面，让作品与观众之间形成长期、可信赖的陪伴关系。
+          </p>
+          <div class="hs2-hero-actions">
+            <a class="hs2-btn hs2-btn-primary" href="#hs2-videos">进入内容库 →</a>
+            <button class="hs2-btn hs2-btn-ghost" type="button" data-hs2-open="submit">投稿入口</button>
+            <button class="hs2-btn hs2-btn-ghost" type="button" data-hs2-open="share">分享本站</button>
+          </div>
+          <div class="hs2-hero-stats">
+            <div><b data-hs2-count="1268">0</b><span>原创作品存档</span></div>
+            <div><b data-hs2-count="342">0</b><span>签约创作者</span></div>
+            <div><b data-hs2-count="96">0</b><span>合作企业伙伴</span></div>
+          </div>
+        </div>
+        <figure class="hs2-hero-art">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23231a3d'/%3E%3Cstop offset='.55' stop-color='%23122334'/%3E%3Cstop offset='1' stop-color='%23311b2e'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ff5f7e'/%3E%3Cstop offset='1' stop-color='%23ffd166'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23g1)'/%3E%3Ccircle cx='600' cy='140' r='110' fill='%23ff5f7e' opacity='.22'/%3E%3Ccircle cx='620' cy='150' r='70' fill='%23ffd166' opacity='.25'/%3E%3Cpath d='M0 380 Q140 300 300 360 T620 330 T800 380 V500 H0 Z' fill='%230b1220' opacity='.85'/%3E%3Cg stroke='url(%23g2)' stroke-width='6' fill='none' stroke-linecap='round'%3E%3Cpath d='M200 300 L200 150 L260 210 L320 150 L320 300'/%3E%3Cpath d='M380 300 Q400 160 440 230 Q480 300 500 180'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='.7'%3E%3Ccircle cx='130' cy='90' r='2.5'/%3E%3Ccircle cx='180' cy='60' r='2'/%3E%3Ccircle cx='700' cy='330' r='2.5'/%3E%3Ccircle cx='520' cy='70' r='2'/%3E%3Ccircle cx='90' cy='250' r='2'/%3E%3C/g%3E%3Ctext x='40' y='460' font-family='Arial' font-size='20' fill='%23a7b2c8'%3E黑兽2樱花动漫 · 主视觉 2026%3C/text%3E%3C/svg%3E" alt="黑兽2樱花动漫品牌主视觉，深色星夜与渐变光带构成的动画氛围图" width="800" height="500">
+          <span class="hs2-hero-art-tag">官方发布</span>
+          <figcaption class="hs2-hero-art-cap">
+            <b>品牌主视觉 · 2026 年度</b>
+            深色调光影与角色剪影，演绎黑兽2樱花动漫的影像美学基调
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 关键词深度解析 ================= -->
+  <section class="hs2-section hs2-about" id="hs2-about">
+    <div class="hs2-wrap">
+      <div class="hs2-section-head">
+        <div>
+          <div class="hs2-eyebrow">BRAND INSIGHT · 品牌解析</div>
+          <h2 class="hs2-h2">关于 <span>黑兽2樱花动漫</span> 的内容定位与价值体系</h2>
+          <p class="hs2-sub">一个品牌官网应该回答的，不只是「我们做了什么」，而是「我们为何这样做」。</p>
+        </div>
+      </div>
+      <div class="hs2-about-card">
+        <p>
+          <strong>黑兽2樱花动漫</strong>是一个以原创动画为核心的企业品牌，官方网站承担着品牌档案、内容索引与社区连接三重职能。我们把「黑兽2樱花动漫」理解成一种影像语言：它既有类型叙事的张力，也有樱花般短暂而浓烈的情绪质感。因此在内容结构上，品牌没有把动画简单拆分成「短片」与「花絮」，而是以<strong>内容生态</strong>的方式重新组织——作品、创作者、制作过程、观众反馈，构成一条可被追溯的完整链路。这条链路的每一环，都通过官方网站持续更新、持续公开。
+        </p>
+        <div class="hs2-about-cols">
+          <div>
+            <h3>从类型题材到专业表达</h3>
+            <p>
+              黑兽2樱花动漫的内容起点是类型化的动画叙事，落点却是专业化的影像表达。我们要求每一部作品在分镜、色指定、摄影合成三个环节都留下可查的制作记录。观众看到的不只是成片，还有分镜稿与色彩演变的对照。这种把「过程」当作正片一部分的做法，是品牌深耕垂直领域的直接体现，也让官方网站区别于普通的作品聚合页。
+            </p>
+            <h3>创作者不是流量单位</h3>
+            <p>
+              在创作者机制上，品牌坚持用户至上但不以点击量作为唯一尺度。签约创作者拥有完整的分账与署名权利，他们的失败稿、废案、重制版本同样被收录进档案库。我们相信<strong>真实</strong>的创作痕迹比精美的成品更有力量，这也是内容社区能够长期留住人的关键。创作者档案页包含擅长领域、作品年表与个人手记，构成可被检索的个人史。
+            </p>
+          </div>
+          <div>
+            <h3>持续运营，而非一次性发布</h3>
+            <p>
+              企业自2018年起持续运营，累计归档原创作品超过1200件。官方网站按月发布内容更新日志，按季度发布行业观察报告，按年度发布品牌内容年鉴。这种节律让「黑兽2樱花动漫」不只是一个作品名，而是一个有呼吸感的内容品牌。我们同时开放投稿通道，让外部创作者以项目制方式参与品牌企划，双向流动比单向输出更能形成影响力。
+            </p>
+            <h3>品质与口碑的双重校验</h3>
+            <p>
+              品牌建立了两套校验机制：内部由制作委员会对每一集进行技术审查，外部由社区观众进行内容打分与长评沉淀。两套机制的结论都会以摘要形式公开在官方网站上，包括未通过的评审意见。这种近乎苛刻的透明度，是黑兽2樱花动漫在动画爱好者中建立<strong>值得信赖</strong>口碑的方式，也让内容生态保持干净的讨论空气。
+            </p>
+          </div>
+        </div>
+        <div class="hs2-about-tags">
+          <span>原创动画</span><span>正版高清</span><span>幕后纪实</span><span>创作者访谈</span>
+          <span>内容生态</span><span>行业观察</span><span>品牌故事</span><span>持续运营</span>
+          <span>匠心制作</span><span>社区共创</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 焦点内容 ================= -->
+  <section class="hs2-section" id="hs2-focus">
+    <div class="hs2-wrap">
+      <div class="hs2-section-head">
+        <div>
+          <div class="hs2-eyebrow">FOCUS · 焦点内容</div>
+          <h2 class="hs2-h2">本周 <span>重点推荐</span></h2>
+          <p class="hs2-sub">编辑部从内容库中挑出的四部作品，覆盖叙事、制作、人物与观察四个维度。</p>
+        </div>
+        <a class="hs2-more" href="#hs2-videos">查看全部内容</a>
+      </div>
+      <div class="hs2-feature-grid">
+        <article class="hs2-focus-main">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231a1030'/%3E%3Cstop offset='1' stop-color='%23341d3f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Cg opacity='.9'%3E%3Ccircle cx='640' cy='120' r='86' fill='%23ff5f7e' opacity='.5'/%3E%3Ccircle cx='640' cy='120' r='52' fill='%23ffd166' opacity='.65'/%3E%3C/g%3E%3Cpath d='M0 330 Q120 260 260 320 T520 290 T800 340 V450 H0 Z' fill='%230c1120'/%3E%3Cg stroke='%23ff5f7e' stroke-width='4' fill='none'%3E%3Cpath d='M120 300 L120 180 L170 230 L220 180 L220 300'/%3E%3C/g%3E%3Cg fill='%23ffd166' opacity='.85'%3E%3Ccircle cx='380' cy='150' r='4'/%3E%3Ccircle cx='450' cy='110' r='3'/%3E%3Ccircle cx='510' cy='180' r='4'/%3E%3C/g%3E%3Ctext x='40' y='70' font-family='Arial' font-size='22' fill='%23ffffff' opacity='.8'%3E黑兽2樱花动漫 · 概念短片%3C/text%3E%3C/svg%3E" alt="黑兽2樱花动漫概念短片封面，深紫夜空与粉金光晕中的剪影构图" width="800" height="450">
+          <div class="hs2-focus-main-body">
+            <span class="hs2-chip">官方发布</span>
+            <h3>《残响之庭》概念短片：用七分钟讲完一段未说出口的告别</h3>
+            <p>黑兽2樱花动漫年度概念企划，全片无对白，依靠环境音与分镜节奏完成情绪推进，导演手记同步上线。</p>
+            <div class="hs2-focus-meta">
+              <span>时长 07:12</span><span>2026-11-16 发布</span><span>播放 28.6 万</span>
+            </div>
+          </div>
+        </article>
+        <div class="hs2-focus-side">
+          <article class="hs2-mini">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23151c2b'/%3E%3Cpath d='M0 150 L70 100 L140 140 L210 90 L320 150 V200 H0Z' fill='%234cc9f0' opacity='.45'/%3E%3Ccircle cx='250' cy='60' r='26' fill='%23ffd166' opacity='.75'/%3E%3Cg stroke='%23ffffff' stroke-width='2' opacity='.4'%3E%3Cpath d='M40 40 H140'/%3E%3Cpath d='M40 55 H110'/%3E%3C/g%3E%3C/svg%3E" alt="分镜解析系列节目封面，蓝青色山形与几何分镜板" width="320" height="200">
+            <div>
+              <h4>分镜解析 01：一场追逐戏如何被拆成 43 个镜头</h4>
+              <span>制作纪实 · 12:40 · 播放 9.2 万</span>
+            </div>
+          </article>
+          <article class="hs2-mini">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23261a2e'/%3E%3Crect x='24' y='120' width='40' height='60' fill='%23ff5f7e' opacity='.7'/%3E%3Crect x='74' y='90' width='40' height='90' fill='%23ffd166' opacity='.7'/%3E%3Crect x='124' y='60' width='40' height='120' fill='%234cc9f0' opacity='.7'/%3E%3Crect x='174' y='100' width='40' height='80' fill='%23ffffff' opacity='.35'/%3E%3Crect x='224' y='40' width='40' height='140' fill='%23a35bff' opacity='.7'/%3E%3C/svg%3E" alt="行业观察节目封面，彩色柱状数据与深色背景" width="320" height="200">
+            <div>
+              <h4>行业观察：中小动画团队在 2026 年的三种活法</h4>
+              <span>深度访谈 · 23:05 · 播放 6.7 万</span>
+            </div>
+          </article>
+          <article class="hs2-mini">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%2318202f'/%3E%3Ccircle cx='100' cy='100' r='46' fill='%23ff5f7e' opacity='.55'/%3E%3Ccircle cx='152' cy='100' r='46' fill='%23ffd166' opacity='.45'/%3E%3Ccircle cx='204' cy='100' r='46' fill='%234cc9f0' opacity='.4'/%3E%3C/svg%3E" alt="创作者访谈封面，三色重叠圆形构成的抽象对话意象" width="320" height="200">
+            <div>
+              <h4>对话色指定师林覃：颜色是最先被观众感知的台词</h4>
+              <span>人物访谈 · 18:33 · 播放 5.4 万</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 内容库 ================= -->
+  <section class="hs2-section" id="hs2-videos">
+    <div class="hs2-wrap">
+      <div class="hs2-section-head">
+        <div>
+          <div class="hs2-eyebrow">CONTENT LIBRARY · 内容库</div>
+          <h2 class="hs2-h2">黑兽2樱花动漫 <span>精选内容</span></h2>
+          <p class="hs2-sub">按题材筛选，每张卡片都标注了时长、作者与互动数据，方便你建立自己的观看路径。</p>
+        </div>
+      </div>
+      <div class="hs2-filter" id="hs2Filter">
+        <button type="button" class="on" data-hs2-filter="all">全部</button>
+        <button type="button" data-hs2-filter="story">叙事作品</button>
+        <button type="button" data-hs2-filter="making">制作纪实</button>
+        <button type="button" data-hs2-filter="talk">人物访谈</button>
+        <button type="button" data-hs2-filter="observe">行业观察</button>
+      </div>
+      <div class="hs2-video-grid" id="hs2VideoGrid">
+
+        <article class="hs2-video" data-hs2-cat="story">
+          <div class="hs2-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23201633'/%3E%3Cstop offset='1' stop-color='%233d1f3a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v1)'/%3E%3Ccircle cx='360' cy='80' r='58' fill='%23ff5f7e' opacity='.45'/%3E%3Cpath d='M0 200 Q120 150 240 190 T480 200 V270 H0Z' fill='%230b1220'/%3E%3Cpath d='M110 200 L110 110 L150 150 L190 110 L190 200' stroke='%23ffd166' stroke-width='4' fill='none'/%3E%3C/svg%3E" alt="黑兽2樱花动漫叙事短片《樱落之前》封面，粉紫夜空与剪影" width="480" height="270">
+            <span class="hs2-video-tagcorner">正片</span>
+            <span class="hs2-video-dur">14:26</span>
+            <div class="hs2-video-play"><i>▶</i></div>
+          </div>
+          <div class="hs2-video-body">
+            <h3>《樱落之前》第一话：她把最后一次见面留在了雨里</h3>
+            <p>黑兽2樱花动漫原创叙事单元开篇，以一场未完成的约见切入人物关系，结尾留下长镜头留白。</p>
+            <div class="hs2-video-tags"><span>叙事</span><span>原创</span><span>高清</span></div>
+            <div class="hs2-video-foot">
+              <div class="hs2-video-author"><span class="hs2-avatar" style="background:#ff5f7e">黑</span>官方制作组</div>
+              <div class="hs2-actions">
+                <button class="hs2-act" type="button" data-hs2-like>♡ <b>1.2k</b></button>
+                <button class="hs2-act" type="button" data-hs2-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hs2-video" data-hs2-cat="making">
+          <div class="hs2-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23151d2c'/%3E%3Cg stroke='%234cc9f0' stroke-width='2' opacity='.55'%3E%3Cpath d='M40 40 H180'/%3E%3Cpath d='M40 56 H140'/%3E%3Cpath d='M40 72 H160'/%3E%3C/g%3E%3Crect x='220' y='36' width='220' height='130' rx='8' fill='none' stroke='%23ffd166' stroke-width='2'/%3E%3Crect x='240' y='56' width='80' height='90' fill='%23ff5f7e' opacity='.35'/%3E%3Crect x='336' y='56' width='84' height='42' fill='%234cc9f0' opacity='.35'/%3E%3Crect x='336' y='104' width='84' height='42' fill='%23ffd166' opacity='.35'/%3E%3C/svg%3E" alt="制作纪实《从线稿到成片》封面，分镜表格与色块排版" width="480" height="270">
+            <span class="hs2-video-tagcorner">幕后</span>
+            <span class="hs2-video-dur">21:08</span>
+            <div class="hs2-video-play"><i>▶</i></div>
+          </div>
+          <div class="hs2-video-body">
+            <h3>从线稿到成片：一集动画的 47 天制作日志</h3>
+            <p>完整记录黑兽2樱花动漫单集制作流程，包含原画修正、上色测试与摄影合成阶段的实拍素材。</p>
+            <div class="hs2-video-tags"><span>制作纪实</span><span>分镜</span><span>匠人</span></div>
+            <div class="hs2-video-foot">
+              <div class="hs2-video-author"><span class="hs2-avatar" style="background:#4cc9f0">制</span>制作委员会</div>
+              <div class="hs2-actions">
+                <button class="hs2-act" type="button" data-hs2-like>♡ <b>860</b></button>
+                <button class="hs2-act" type="button" data-hs2-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hs2-video" data-hs2-cat="talk">
+          <div class="hs2-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23241a30'/%3E%3Ccircle cx='150' cy='135' r='70' fill='%23ff5f7e' opacity='.45'/%3E%3Ccircle cx='330' cy='135' r='70' fill='%234cc9f0' opacity='.35'/%3E%3Cg fill='%23ffffff' opacity='.7'%3E%3Ccircle cx='240' cy='70' r='4'/%3E%3Ccircle cx='240' cy='200' r='4'/%3E%3C/g%3E%3C/svg%3E" alt="人物访谈《声音的第二种表情》封面，左右两色圆形代表对话双方" width="480" height="270">
+            <span class="hs2-video-tagcorner">访谈</span>
+            <span class="hs2-video-dur">26:50</span>
+            <div class="hs2-video-play"><i>▶</i></div>
+          </div>
+          <div class="hs2-video-body">
+            <h3>声音的第二种表情：对话配音演员苏屿</h3>
+            <p>从试音失败到成为黑兽2樱花动漫主力声线，苏屿讲述声音表演中被忽略的技术细节。</p>
+            <div class="hs2-video-tags"><span>人物访谈</span><span>声音</span><span>成长</span></div>
+            <div class="hs2-video-foot">
+              <div class="hs2-video-author"><span class="hs2-avatar" style="background:#a35bff">访</span>编辑部</div>
+              <div class="hs2-actions">
+                <button class="hs2-act" type="button" data-hs2-like>♡ <b>1.5k</b></button>
+                <button class="hs2-act" type="button" data-hs2-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hs2-video" data-hs2-cat="observe">
+          <div class="hs2-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%230f1a22'/%3E%3Cg fill='%234c9' opacity='.8'%3E%3Crect x='50' y='150' width='34' height='80' fill='%23ff5f7e'/%3E%3Crect x='100' y='120' width='34' height='110' fill='%23ffd166'/%3E%3Crect x='150' y='90' width='34' height='140' fill='%234cc9f0'/%3E%3Crect x='200' y='60' width='34' height='170' fill='%23a35bff'/%3E%3C/g%3E%3Cpath d='M50 120 L140 90 L230 60 L320 80 L420 40' stroke='%23ffffff' stroke-width='2' fill='none' opacity='.7'/%3E%3C/svg%3E" alt="行业观察《动画内容的第二年》封面，多层柱状图与上升曲线" width="480" height="270">
+            <span class="hs2-video-tagcorner">观察</span>
+            <span class="hs2-video-dur">17:34</span>
+            <div class="hs2-video-play"><i>▶</i></div>
+          </div>
+          <div class="hs2-video-body">
+            <h3>动画内容的「第二年」：从爆款依赖到稳定产出</h3>
+            <p>黑兽2樱花动漫研究组整理近三年行业数据，讨论内容平台如何在品质与产能之间找到平衡。</p>
+            <div class="hs2-video-tags"><span>行业观察</span><span>数据</span><span>生态</span></div>
+            <div class="hs2-video-foot">
+              <div class="hs2-video-author"><span class="hs2-avatar" style="background:#ffd166;color:#2a2105">研</span>研究组</div>
+              <div class="hs2-actions">
+                <button class="hs2-act" type="button" data-hs2-like>♡ <b>640</b></button>
+                <button class="hs2-act" type="button" data-hs2-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hs2-video" data-hs2-cat="making">
+          <div class="hs2-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%231b1a2b'/%3E%3Cg stroke='%23ff5f7e' stroke-width='3' fill='none'%3E%3Cpath d='M80 200 Q140 80 200 160 T320 120 T420 180'/%3E%3C/g%3E%3Cg fill='%23ffd166' opacity='.8'%3E%3Ccircle cx='80' cy='200' r='5'/%3E%3Ccircle cx='200' cy='160' r='5'/%3E%3Ccircle cx='320' cy='120' r='5'/%3E%3Ccircle cx='420' cy='180' r='5'/%3E%3C/g%3E%3Ctext x='60' y='60' font-family='Arial' font-size='18' fill='%23ffffff' opacity='.6'%3EKEYFRAME TIMELINE%3C/text%3E%3C/svg%3E" alt="原画时间轴教程封面，粉色曲线与关键帧节点" width="480" height="270">
+            <span class="hs2-video-tagcorner">教程</span>
+            <span class="hs2-video-dur">32:15</span>
+            <div class="hs2-video-play"><i>▶</i></div>
+          </div>
+          <div class="hs2-video-body">
+            <h3>原画时间轴实操：如何让动作在 12 帧里说得通</h3>
+            <p>面向新人的制作教程，用黑兽2樱花动漫实际镜头讲解关键帧节奏与加减速曲线的处理原则。</p>
+            <div class="hs2-video-tags"><span>教程</span><span>原画</span><span>实操</span></div>
+            <div class="hs2-video-foot">
+              <div class="hs2-video-author"><span class="hs2-avatar" style="background:#4cc9f0">教</span>制作委员会</div>
+              <div class="hs2-actions">
+                <button class="hs2-act" type="button" data-hs2-like>♡ <b>2.1k</b></button>
+                <button class="hs2-act" type="button" data-hs2-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hs2-video" data-hs2-cat="story">
+          <div class="hs2-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%231d1526'/%3E%3Cpath d='M0 220 Q120 180 240 210 T480 200 V270 H0Z' fill='%230a0f1a'/%3E%3Cg fill='%23ff9db0' opacity='.85'%3E%3Ccircle cx='120' cy='150' r='7'/%3E%3Ccircle cx='180' cy='120' r='5'/%3E%3Ccircle cx='250' cy='160' r='8'/%3E%3Ccircle cx='320' cy='110' r='5'/%3E%3Ccircle cx='380' cy='150' r='7'/%3E%3C/g%3E%3C/svg%3E" alt="叙事短片《回声车站》封面，暗色剪影与飘散粉色光点" width="480" height="270">
+            <span class="hs2-video-tagcorner">正片</span>
+            <span class="hs2-video-dur">11:03</span>
+            <div class="hs2-video-play"><i>▶</i></div>
+          </div>
+          <div class="hs2-video-body">
+            <h3>《回声车站》第四话：站台上的广播重复了十二次</h3>
+            <p>黑兽2樱花动漫系列叙事作品，以循环结构推进叙事，第四话首次揭开广播声的来源。</p>
+            <div class="hs2-video-tags"><span>叙事</span><span>系列</span><span>原创</span></div>
+            <div class="hs2-video-foot">
+              <div class="hs2-video-author"><span class="hs2-avatar" style="background:#ff5f7e">黑</span>官方制作组</div>
+              <div class="hs2-actions">
+                <button class="hs2-act" type="button" data-hs2-like>♡ <b>980</b></button>
+                <button class="hs2-act" type="button" data-hs2-save>☆</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 专题企划 ================= -->
+  <section class="hs2-section" id="hs2-topics">
+    <div class="hs2-wrap">
+      <div class="hs2-section-head">
+        <div>
+          <div class="hs2-eyebrow">SERIES · 专题企划</div>
+          <h2 class="hs2-h2">正在进行的 <span>专题企划</span></h2>
+          <p class="hs2-sub">品牌定期推出主题企划，从创作幕后到文化讨论，形成可连续追看的内容序列。</p>
+        </div>
+      </div>
+      <div class="hs2-topic-grid">
+        <a class="hs2-topic" href="#hs2-videos">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23201630'/%3E%3Cg stroke='%23ffd166' stroke-width='3' fill='none' opacity='.85'%3E%3Crect x='70' y='70' width='110' height='70' rx='6'/%3E%3Crect x='210' y='110' width='110' height='70' rx='6'/%3E%3Crect x='300' y='60' width='90' height='60' rx='6'/%3E%3C/g%3E%3Cpath d='M125 140 L210 145' stroke='%23ff5f7e' stroke-width='3' fill='none'/%3E%3C/svg%3E" alt="专题《分镜的非典型解法》封面，矩形分镜框与连线" width="480" height="300">
+          <div class="hs2-topic-body">
+            <h3>专题 · 分镜的非典型解法</h3>
+            <p>六位创作者分享如何打破常规镜头逻辑，用空间与留白重新组织叙事。</p>
+            <span class="hs2-topic-state">已更新 4 集 · 连载中</span>
+          </div>
+        </a>
+        <a class="hs2-topic" href="#hs2-videos">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23141f2c'/%3E%3Ccircle cx='240' cy='150' r='90' fill='none' stroke='%234cc9f0' stroke-width='3'/%3E%3Ccircle cx='240' cy='150' r='56' fill='none' stroke='%23ff5f7e' stroke-width='3'/%3E%3Ccircle cx='240' cy='150' r='22' fill='%23ffd166'/%3E%3C/svg%3E" alt="专题《色彩的一百种灰度》封面，同心圆与三色叠加" width="480" height="300">
+          <div class="hs2-topic-body">
+            <h3>专题 · 色彩的一百种灰度</h3>
+            <p>从色指定到摄影合成，追踪一部动画的色彩决策链条与最终呈现差异。</p>
+            <span class="hs2-topic-state">已更新 3 集 · 连载中</span>
+          </div>
+        </a>
+        <a class="hs2-topic" href="#hs2-videos">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23251a26'/%3E%3Cg fill='%23ff9db0' opacity='.8'%3E%3Crect x='60' y='180' width='60' height='60' rx='6'/%3E%3Crect x='140' y='130' width='60' height='110' rx='6'/%3E%3Crect x='220' y='90' width='60' height='150' rx='6'/%3E%3Crect x='300' y='140' width='60' height='100' rx='6'/%3E%3Crect x='380' y='100' width='60' height='140' rx='6'/%3E%3C/g%3E%3C/svg%3E" alt="专题《十年影像档案馆》封面，高低错落的粉色档案方块" width="480" height="300">
+          <div class="hs2-topic-body">
+            <h3>专题 · 十年影像档案馆</h3>
+            <p>回看品牌历年作品，从早期手绘尝试到当下的工业化制作流程。</p>
+            <span class="hs2-topic-state">完整上线 · 共 5 集</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 创作者 ================= -->
+  <section class="hs2-section" id="hs2-creators">
+    <div class="hs2-wrap">
+      <div class="hs2-section-head">
+        <div>
+          <div class="hs2-eyebrow">CREATORS · 创作者矩阵</div>
+          <h2 class="hs2-h2">与黑兽2樱花动漫 <span>同行的创作者</span></h2>
+          <p class="hs2-sub">点击创作者卡片可查看其档案摘要。我们相信创作者是内容生态最稳定的地基。</p>
+        </div>
+      </div>
+      <div class="hs2-creator-grid" id="hs2CreatorGrid">
+        <article class="hs2-creator" data-hs2-creator="沈砚|导演 / 分镜|早期从事广告分镜，2021 年加入品牌企划组，擅长在有限镜头内完成情绪转折，代表作《樱落之前》系列。" data-hs2-name="沈砚">
+          <div class="hs2-creator-avatar" style="background:linear-gradient(135deg,#ff5f7e,#a35bff)">沈</div>
+          <h3>沈砚</h3>
+          <div class="hs2-field">导演 / 分镜</div>
+          <p>早期从事广告分镜，2021 年加入品牌企划组，擅长在有限镜头内完成情绪转折。</p>
+          <div class="hs2-creator-nums"><div><b>48</b>作品</div><div><b>6.2万</b>关注</div></div>
+        </article>
+        <article class="hs2-creator" data-hs2-creator="林覃|色指定|动画色彩方向从业九年，负责黑兽2樱花动漫多部作品的整体色调设计，主张颜色先于台词传递情绪。" data-hs2-name="林覃">
+          <div class="hs2-creator-avatar" style="background:linear-gradient(135deg,#4cc9f0,#3178c6)">林</div>
+          <h3>林覃</h3>
+          <div class="hs2-field">色指定</div>
+          <p>动画色彩方向从业九年，负责多部作品的整体色调设计，主张颜色先于台词传递情绪。</p>
+          <div class="hs2-creator-nums"><div><b>36</b>作品</div><div><b>4.8万</b>关注</div></div>
+        </article>
+        <article class="hs2-creator" data-hs2-creator="苏屿|配音 / 声音设计|从试音失败到主力声线，苏屿参与品牌近三年全部叙事作品的配音工作，同时负责部分环境音设计。" data-hs2-name="苏屿">
+          <div class="hs2-creator-avatar" style="background:linear-gradient(135deg,#ffd166,#ff8a3d);color:#2a2105">苏</div>
+          <h3>苏屿</h3>
+          <div class="hs2-field">配音 / 声音设计</div>
+          <p>从试音失败到主力声线，参与品牌近三年全部叙事作品的配音，同时负责环境音设计。</p>
+          <div class="hs2-creator-nums"><div><b>52</b>作品</div><div><b>7.5万</b>关注</div></div>
+        </article>
+        <article class="hs2-creator" data-hs2-creator="周映|剪辑 / 后期|负责专题企划的剪辑与节奏把控，喜欢用碎片化素材重组叙事，是团队里最坚持「先剪再想」的人。" data-hs2-name="周映">
+          <div class="hs2-creator-avatar" style="background:linear-gradient(135deg,#6ee7a8,#2f9e6b)">周</div>
+          <h3>周映</h3>
+          <div class="hs2-field">剪辑 / 后期</div>
+          <p>负责专题企划的剪辑与节奏把控，喜欢用碎片化素材重组叙事，坚持「先剪再想」。</p>
+          <div class="hs2-creator-nums"><div><b>41</b>作品</div><div><b>3.9万</b>关注</div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 作品墙 ================= -->
+  <section class="hs2-section" id="hs2-wall">
+    <div class="hs2-wrap">
+      <div class="hs2-section-head">
+        <div>
+          <div class="hs2-eyebrow">GALLERY · 影像墙</div>
+          <h2 class="hs2-h2">社区与创作者的 <span>影像切片</span></h2>
+          <p class="hs2-sub">来自官方企划与社区投稿的画面片段，尺寸不一，但都是黑兽2樱花动漫生态的一部分。</p>
+        </div>
+      </div>
+      <div class="hs2-wall">
+        <figure class="hs2-w-lg">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%231c1730'/%3E%3Ccircle cx='240' cy='180' r='110' fill='%23ff5f7e' opacity='.35'/%3E%3Cpath d='M0 360 Q120 300 240 350 T480 340 V480 H0Z' fill='%230b1220'/%3E%3Cg stroke='%23ffd166' stroke-width='4' fill='none' opacity='.8'%3E%3Cpath d='M150 360 L150 220 L200 270 L250 220 L250 360'/%3E%3C/g%3E%3C/svg%3E" alt="黑兽2樱花动漫年度企划主视觉，粉红光晕下的剪影山峰" width="480" height="480">
+          <figcaption>年度企划主视觉 · 官方</figcaption>
+        </figure>
+        <figure class="hs2-w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' fill='%23141f2c'/%3E%3Ccircle cx='120' cy='120' r='60' fill='none' stroke='%234cc9f0' stroke-width='4'/%3E%3Ccircle cx='120' cy='120' r='24' fill='%23ffd166'/%3E%3C/svg%3E" alt="色彩专题视觉碎片，蓝青同心圆与中心黄点" width="240" height="240">
+          <figcaption>色彩专题 · 林覃</figcaption>
+        </figure>
+        <figure class="hs2-w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' fill='%23251a26'/%3E%3Cg fill='%23ff9db0'%3E%3Crect x='40' y='140' width='34' height='60'/%3E%3Crect x='86' y='100' width='34' height='100'/%3E%3Crect x='132' y='60' width='34' height='140'/%3E%3Crect x='178' y='120' width='34' height='80'/%3E%3C/g%3E%3C/svg%3E" alt="档案专题视觉碎片，粉色高低柱状图形" width="240" height="240">
+          <figcaption>十年档案 · 数据墙</figcaption>
+        </figure>
+        <figure class="hs2-w-md">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 240'%3E%3Crect width='480' height='240' fill='%231a2334'/%3E%3Cg stroke='%23ffffff' stroke-width='2' opacity='.5'%3E%3Cpath d='M40 60 H200'/%3E%3Cpath d='M40 90 H160'/%3E%3Cpath d='M40 120 H220'/%3E%3C/g%3E%3Crect x='280' y='50' width='160' height='140' rx='10' fill='none' stroke='%23ff5f7e' stroke-width='3'/%3E%3Ccircle cx='360' cy='120' r='34' fill='%23ffd166' opacity='.8'/%3E%3C/svg%3E" alt="制作纪实视觉碎片，分镜稿纸与粉框画面" width="480" height="240">
+          <figcaption>制作日志 · 分镜对照</figcaption>
+        </figure>
+        <figure class="hs2-w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' fill='%230f1a22'/%3E%3Cpath d='M20 190 L80 130 L140 170 L200 100' stroke='%23ffd166' stroke-width='4' fill='none'/%3E%3Ccircle cx='80' cy='130' r='6' fill='%23ff5f7e'/%3E%3Ccircle cx='140' cy='170' r='6' fill='%234cc9f0'/%3E%3C/svg%3E" alt="行业观察视觉碎片，上升折线与节点" width="240" height="240">
+          <figcaption>行业观察 · 趋势图</figcaption>
+        </figure>
+        <figure class="hs2-w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' fill='%23201633'/%3E%3Ccircle cx='80' cy='100' r='40' fill='%23a35bff' opacity='.6'/%3E%3Ccircle cx='150' cy='150' r='50' fill='%23ff5f7e' opacity='.5'/%3E%3C/svg%3E" alt="人物访谈视觉碎片，紫粉叠加圆形对话意象" width="240" height="240">
+          <figcaption>访谈 · 声音表情</figcaption>
+        </figure>
+        <figure class="hs2-w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' fill='%23151d2c'/%3E%3Cg stroke='%234cc9f0' stroke-width='3' fill='none'%3E%3Cpath d='M40 60 Q120 20 200 60'/%3E%3Cpath d='M40 100 Q120 60 200 100'/%3E%3Cpath d='M40 140 Q120 100 200 140'/%3E%3C/g%3E%3C/svg%3E" alt="社区投稿视觉碎片，层叠蓝青弧线" width="240" height="240">
+          <figcaption>社区投稿 · 弧线练习</figcaption>
+        </figure>
+        <figure class="hs2-w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' fill='%23221b12'/%3E%3Ccircle cx='120' cy='120' r='70' fill='none' stroke='%23ffd166' stroke-width='3'/%3E%3Cpath d='M120 50 L120 190 M50 120 L190 120' stroke='%23ff9db0' stroke-width='3'/%3E%3C/svg%3E" alt="品牌视觉碎片，金色环形与十字轴线" width="240" height="240">
+          <figcaption>品牌视觉 · 年度符号</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 故事 / 随笔 + 评价 ================= -->
+  <section class="hs2-section" id="hs2-stories">
+    <div class="hs2-wrap">
+      <div class="hs2-section-head">
+        <div>
+          <div class="hs2-eyebrow">NOTES · 故事与随笔</div>
+          <h2 class="hs2-h2">写在作品之外的 <span>手记</span></h2>
+          <p class="hs2-sub">制作组成员与社区用户的短篇文字，记录那些没能放进正片的细节。</p>
+        </div>
+      </div>
+      <div class="hs2-story-grid">
+        <article class="hs2-story">
+          <div class="hs2-quote">“</div>
+          <h3>把一场雨画了三十七遍</h3>
+          <p>《樱落之前》第一话的雨中镜头，前后重画了三十七版。最初想要的是戏剧化的倾盆大雨，最后留下的却是几乎看不见的细雨。因为人物在那场戏里，本来就不允许自己痛快地哭出来。</p>
+          <div class="hs2-story-foot"><span>沈砚 · 导演手记</span><span>11月16日</span></div>
+        </article>
+        <article class="hs2-story">
+          <div class="hs2-quote">“</div>
+          <h3>颜色表上的第十二号灰</h3>
+          <p>色指定工作最容易被误解成「选好看的颜色」。其实更多时候是在选不好看但正确的颜色。第十二号灰是我为黑兽2樱花动漫设定的「回忆底色」，它只在闪回里出现，观众大概不会注意到，但我希望它被注意到。</p>
+          <div class="hs2-story-foot"><span>林覃 · 色指定</span><span>11月12日</span></div>
+        </article>
+        <article class="hs2-story">
+          <div class="hs2-quote">“</div>
+          <h3>我在评论区认识了这个社区</h3>
+          <p>三年前我第一次在官方内容下留言，指出某个镜头的透视问题，没想到收到了制作组的回复与一版对照图。后来我成了这里的常驻观众。这个平台给我的感觉是，认真看片的人会被认真对待。</p>
+          <div class="hs2-story-foot"><span>社区用户 · 白桦</span><span>11月09日</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="hs2-section" id="hs2-reviews">
+    <div class="hs2-wrap">
+      <div class="hs2-section-head">
+        <div>
+          <div class="hs2-eyebrow">VOICES · 社区声音</div>
+          <h2 class="hs2-h2">来自观众的 <span>真实评价</span></h2>
+        </div>
+      </div>
+      <div class="hs2-review-grid">
+        <article class="hs2-review">
+          <div class="hs2-review-head"><span class="hs2-avatar" style="background:#ff5f7e">林</span><div><b>林小满</b><br><span>追更 2 年</span></div></div>
+          <div class="hs2-stars">★★★★★</div>
+          <p>最喜欢这里的幕后内容，不是那种摆拍的花絮，而是真的把手稿、废案摆出来给你看。看完《从线稿到成片》我才理解一集动画有多难。</p>
+        </article>
+        <article class="hs2-review">
+          <div class="hs2-review-head"><span class="hs2-avatar" style="background:#4cc9f0">陈</span><div><b>陈默</b><br><span>动画从业者</span></div></div>
+          <div class="hs2-stars">★★★★☆</div>
+          <p>作为同行，我更看重它的行业观察栏目。数据不是随便贴的，会标注来源与统计口径，这一点在同类内容里很少见。希望更新再快一点。</p>
+        </article>
+        <article class="hs2-review">
+          <div class="hs2-review-head"><span class="hs2-avatar" style="background:#a35bff">周</span><div><b>周三三</b><br><span>社区投稿者</span></div></div>
+          <div class="hs2-stars">★★★★★</div>
+          <p>投稿流程比想象中顺畅，两周内收到了编辑的修改建议，不是模板回复，是逐条写的。虽然没有立刻被采用，但这种反馈本身就很有价值。</p>
+        </article>
+        <article class="hs2-review">
+          <div class="hs2-review-head"><span class="hs2-avatar" style="background:#ffd166;color:#2a2105">赵</span><div><b>赵一叶</b><br><span>新观众</span></div></div>
+          <div class="hs2-stars">★★★★☆</div>
+          <p>第一次来是被朋友安利《残响之庭》，七分钟没有一个字的台词，居然看哭了。页面很舒服，找片不费劲，就是希望能有个按年份筛选的功能。</p>
+        </article>
+        <article class="hs2-review">
+          <div class="hs2-review-head"><span class="hs2-avatar" style="background:#6ee7a8;color:#0d2a1b">吴</span><div><b>吴岸</b><br><span>收藏控</span></div></div>
+          <div class="hs2-stars">★★★★★</div>
+          <p>作品墙这个设计我太喜欢了，尺寸错落但很有秩序，像在看一本画册。希望能开放高清原图下载，做壁纸用。</p>
+        </article>
+        <article class="hs2-review">
+          <div class="hs2-review-head"><span class="hs2-avatar" style="background:#ff8a3d">许</span><div><b>许听风</b><br><span>长期订阅</span></div></div>
+          <div class="hs2-stars">★★★★☆</div>
+          <p>内容品质稳定，更新也规律，这在动画内容里挺难得。唯一想提的是搜索偶尔找不到旧作，建议把历年作品都归进索引。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 企业动态 + FAQ ================= -->
+  <section class="hs2-section" id="hs2-news">
+    <div class="hs2-wrap">
+      <div class="hs2-section-head">
+        <div>
+          <div class="hs2-eyebrow">NEWS · 企业动态</div>
+          <h2 class="hs2-h2">官方发布与 <span>更新日志</span></h2>
+        </div>
+      </div>
+      <div class="hs2-two-col">
+        <div class="hs2-log-list">
+          <article class="hs2-log">
+            <div class="hs2-log-date">11.18</div>
+            <div>
+              <h3>第二季幕后制作特辑正式上线</h3>
+              <p>共三集，覆盖前期设定、中期作画与后期合成，全部素材由品牌制作委员会官方授权发布。</p>
+            </div>
+          </article>
+          <article class="hs2-log">
+            <div class="hs2-log-date">11.15</div>
+            <div>
+              <h3>创作者激励计划第三期报名开启</h3>
+              <p>面向动画、分镜、声音三个方向，入选者可获得项目制合作机会与官方渠道推荐。</p>
+            </div>
+          </article>
+          <article class="hs2-log">
+            <div class="hs2-log-date">11.12</div>
+            <div>
+              <h3>角色设定资料集发布</h3>
+              <p>包含十二页手稿与设计批注，于官方网站档案区开放查阅，供学习与研究使用。</p>
+            </div>
+          </article>
+          <article class="hs2-log">
+            <div class="hs2-log-date">11.08</div>
+            <div>
+              <h3>专题《分镜的非典型解法》更新第四章</h3>
+              <p>本期邀请外部创作者对谈，讨论商业项目与个人表达之间的取舍。</p>
+            </div>
+          </article>
+        </div>
+        <div class="hs2-faq" id="hs2-faq">
+          <details open>
+            <summary>黑兽2樱花动漫的官方网站提供哪些内容？</summary>
+            <p>官方网站收录品牌原创动画作品、制作纪实、创作者访谈与行业观察四类内容，同时提供专题企划索引与社区互动入口，所有内容均由官方持续更新维护。</p>
+          </details>
+          <details>
+            <summary>如何向品牌投稿？投稿后多久会收到回复？</summary>
+            <p>点击页面中的「投稿入口」按钮，填写项目简介与作品链接即可提交。编辑部通常在十个工作日内回复，若作品进入复审阶段，会额外发送修改建议。</p>
+          </details>
+          <details>
+            <summary>页面中的作品是否支持收藏与分享？</summary>
+            <p>每张内容卡片右下角提供收藏与点赞按钮，页头与页脚均设有分享入口，可通过系统剪贴板复制当前板块链接，或通过社交平台提示进行分享。</p>
+          </details>
+          <details>
+            <summary>创作者激励计划的参与条件是什么？</summary>
+            <p>不限资历，需提交至少一部原创动画相关作品，并同意在入选后参与品牌项目制合作。评审维度包括叙事完整性、制作完成度与个人风格辨识度。</p>
+          </details>
+          <details>
+            <summary>是否可以申请品牌素材用于学习或二创？</summary>
+            <p>可在档案区查阅设定资料。用于非商业学习用途时，请标注来源为黑兽2樱花动漫官方网站；商业用途需通过联系入口提交授权申请。</p>
+          </details>
+          <details>
+            <summary>网站的内容更新频率是怎样的？</summary>
+            <p>内容库通常每周更新一至两次，专题企划按章节节奏推进，企业动态按月发布。重要更新会同步展示在页面顶部的公告条中。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 投稿 / 联系 CTA ================= -->
+  <section class="hs2-section" id="hs2-contact">
+    <div class="hs2-wrap">
+      <div class="hs2-cta">
+        <div class="hs2-cta-grid">
+          <div>
+            <h2>把你的作品，放进黑兽2樱花动漫的内容生态</h2>
+            <p>我们长期开放投稿与合作通道。无论你是独立创作者、制作团队还是品牌方，都可以通过下方入口与我们建立联系，一起把值得被看见的动画内容做出来。</p>
+            <div class="hs2-hero-actions" style="margin-top:0">
+              <button class="hs2-btn hs2-btn-primary" type="button" data-hs2-open="submit">立即投稿 →</button>
+              <button class="hs2-btn hs2-btn-ghost" type="button" data-hs2-open="share">分享给朋友</button>
+              <button class="hs2-btn hs2-btn-ghost" type="button" data-hs2-open="feedback">问题反馈</button>
+            </div>
+          </div>
+          <div class="hs2-cta-info">
+            <div>合作邮箱：<b>brand@heishou-sakura.example</b></div>
+            <div>投稿通道：<b>官方网站 · 投稿入口</b></div>
+            <div>办公地址：<b>杭州 · 创意产业园区 B 座 7 层</b></div>
+            <div>工作时间：<b>周一至周五 10:00 - 18:30</b></div>
+            <div>品牌状态：<b>持续运营中 · 每周内容更新</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= 页脚 ================= -->
+<footer class="hs2-footer">
+  <div class="hs2-wrap">
+    <div class="hs2-footer-grid">
+      <div>
+        <div class="hs2-footer-brand">
+          <span class="hs2-logo-mark">黑</span>
+          <span>黑兽2樱花动漫</span>
+        </div>
+        <p>黑兽2樱花动漫官方网站，专注原创动画内容生态建设。<br>我们持续运营、公开档案、尊重创作者，<br>让每一部作品都能被认真看见。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <p>
+          <a href="#hs2-focus">焦点内容</a><br>
+          <a href="#hs2-videos">内容库</a><br>
+          <a href="#hs2-topics">专题企划</a><br>
+          <a href="#hs2-creators">创作者矩阵</a>
+        </p>
+      </div>
+      <div>
+        <h4>品牌与帮助</h4>
+        <p>
+          <a href="#hs2-about">品牌解析</a><br>
+          <a href="#hs2-news">企业动态</a><br>
+          <a href="#hs2-faq">帮助中心</a><br>
+          <a href="#hs2-contact">联系我们</a>
+        </p>
+      </div>
+      <div>
+        <h4>关注方式</h4>
+        <p>
+          官方发布 · 正版高清<br>
+          投稿与合作请使用联系入口<br>
+          企业信息：黑兽2樱花动漫内容有限公司<br>
+          内容更新：每周一至两次
+        </p>
+      </div>
+    </div>
+    <div class="hs2-footer-bottom">
+      <span>© 2026 黑兽2樱花动漫 官方网站 | 版权所有 | 持续运营中</span>
+      <span>品牌备案信息 · 内容服务声明 · 用户至上 · 匠心制作</span>
+    </div>
+  </div>
+</footer>
+
+<button class="hs2-top-btn" id="hs2TopBtn" type="button" aria-label="回到顶部">↑</button>
+
+<!-- ================= 弹窗：投稿 ================= -->
+<div class="hs2-modal-mask" id="hs2ModalSubmit" role="dialog" aria-modal="true" aria-label="投稿入口">
+  <div class="hs2-modal">
+    <button class="hs2-modal-close" type="button" data-hs2-close aria-label="关闭">✕</button>
+    <h3>向黑兽2樱花动漫投稿</h3>
+    <p class="hs2-modal-sub">请填写基本信息，编辑部将在十个工作日内回复。</p>
+    <form id="hs2SubmitForm">
+      <div class="hs2-field-row">
+        <label for="hs2SName">创作者名称</label>
+        <input id="hs2SName" type="text" placeholder="例如：白桦工作室" required>
+      </div>
+      <div class="hs2-field-row">
+        <label for="hs2SType">投稿方向</label>
+        <select id="hs2SType">
+          <option>叙事短片</option>
+          <option>制作纪实</option>
+          <option>人物访谈</option>
+          <option>行业观察</option>
+        </select>
+      </div>
+      <div class="hs2-field-row">
+        <label for="hs2SDesc">作品简介</label>
+        <textarea id="hs2SDesc" placeholder="简单介绍作品类型、时长与创作背景" required></textarea>
+      </div>
+      <button class="hs2-btn hs2-btn-primary" type="submit" style="width:100%;justify-content:center;margin-top:6px">提交投稿申请</button>
+    </form>
+  </div>
+</div>
+
+<!-- ================= 弹窗：分享 ================= -->
+<div class="hs2-modal-mask" id="hs2ModalShare" role="dialog" aria-modal="true" aria-label="分享">
+  <div class="hs2-modal">
+    <button class="hs2-modal-close" type="button" data-hs2-close aria-label="关闭">✕</button>
+    <h3>分享本站</h3>
+    <p class="hs2-modal-sub">把黑兽2樱花动漫的官方网站推荐给同样喜欢动画内容的朋友。</p>
+    <div class="hs2-share-row">
+      <button type="button" data-hs2-share="微信">微信</button>
+      <button type="button" data-hs2-share="微博">微博</button>
+      <button type="button" data-hs2-share="QQ">QQ</button>
+    </div>
+    <button class="hs2-btn hs2-btn-primary" type="button" id="hs2CopyLink" style="width:100%;justify-content:center;margin-top:16px">复制板块链接</button>
+  </div>
+</div>
+
+<!-- ================= 弹窗：反馈 ================= -->
+<div class="hs2-modal-mask" id="hs2ModalFeedback" role="dialog" aria-modal="true" aria-label="反馈">
+  <div class="hs2-modal">
+    <button class="hs2-modal-close" type="button" data-hs2-close aria-label="关闭">✕</button>
+    <h3>问题反馈</h3>
+    <p class="hs2-modal-sub">我们重视每一条来自社区的意见，反馈将进入内容评审流程。</p>
+    <form id="hs2FeedbackForm">
+      <div class="hs2-field-row">
+        <label for="hs2FType">问题类型</label>
+        <select id="hs2FType">
+          <option>内容错误</option>
+          <option>功能建议</option>
+          <option>版权相关</option>
+          <option>其他问题</option>
+        </select>
+      </div>
+      <div class="hs2-field-row">
+        <label for="hs2FDesc">问题描述</label>
+        <textarea id="hs2FDesc" placeholder="请描述你遇到的问题或建议" required></textarea>
+      </div>
+      <button class="hs2-btn hs2-btn-primary" type="submit" style="width:100%;justify-content:center;margin-top:6px">提交反馈</button>
+    </form>
+  </div>
+</div>
+
+<!-- ================= 弹窗：创作者信息 ================= -->
+<div class="hs2-modal-mask" id="hs2ModalCreator" role="dialog" aria-modal="true" aria-label="创作者信息">
+  <div class="hs2-modal">
+    <button class="hs2-modal-close" type="button" data-hs2-close aria-label="关闭">✕</button>
+    <h3 id="hs2CreatorName">创作者</h3>
+    <p class="hs2-modal-sub" id="hs2CreatorField">擅长领域</p>
+    <p id="hs2CreatorDesc" style="font-size:13.5px;color:#c0c9da;line-height:1.9">简介内容</p>
+    <button class="hs2-btn hs2-btn-primary" type="button" id="hs2CreatorFollow" style="width:100%;justify-content:center;margin-top:20px">关注该创作者</button>
+  </div>
+</div>
+
+<div class="hs2-toast" id="hs2Toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ========== Toast ========== */
+  var toastEl = document.getElementById("hs2Toast");
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add("on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("on"); }, 2200);
+  }
+
+  /* ========== 移动端导航 ========== */
+  var burger = document.getElementById("hs2Burger");
+  var mobileNav = document.getElementById("hs2MobileNav");
+  if(burger && mobileNav){
+    burger.addEventListener("click", function(){
+      var open = mobileNav.classList.toggle("on");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    mobileNav.querySelectorAll("a").forEach(function(a){
+      a.addEventListener("click", function(){
+        mobileNav.classList.remove("on");
+        burger.setAttribute("aria-expanded","false");
+      });
+    });
+  }
+
+  /* ========== 搜索反馈 ========== */
+  var searchInput = document.getElementById("hs2SearchInput");
+  var searchTip = document.getElementById("hs2SearchTip");
+  var searchBtn = document.getElementById("hs2SearchBtn");
+  var searchPool = [
+    "樱落之前","残响之庭","从线稿到成片","声音的第二种表情","回声车站",
+    "分镜的非典型解法","色彩的一百种灰度","十年影像档案馆","沈砚","林覃","苏屿","周映"
+  ];
+  function runSearch(){
+    var kw = (searchInput.value || "").trim();
+    if(!kw){
+      searchTip.innerHTML = "试试搜索 <b>樱落之前</b>、<b>沈砚</b> 或 <b>分镜</b>";
+      searchTip.classList.add("on");
+      return;
+    }
+    var hit = searchPool.filter(function(item){ return item.indexOf(kw) !== -1; });
+    if(hit.length){
+      searchTip.innerHTML = "找到 " + hit.length + " 条相关内容：<b>" + hit.slice(0,4).join("、") + "</b>";
+    }else{
+      searchTip.innerHTML = "暂无与「<b>" + kw.replace(/[<>&]/g,"") + "</b>」完全匹配的内容，可尝试更短的关键词";
+    }
+    searchTip.classList.add("on");
+    setTimeout(function(){ searchTip.classList.remove("on"); }, 5000);
+  }
+  if(searchBtn) searchBtn.addEventListener("click", runSearch);
+  if(searchInput){
+    searchInput.addEventListener("keydown", function(e){
+      if(e.key === "Enter"){ e.preventDefault(); runSearch(); }
+    });
+    searchInput.addEventListener("blur", function(){
+      setTimeout(function(){ searchTip.classList.remove("on"); }, 200);
+    });
+  }
+
+  /* ========== 数字滚动 ========== */
+  var counters = document.querySelectorAll("[data-hs2-count]");
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute("data-hs2-count"), 10) || 0;
+      var start = 0;
+      var step = Math.max(1, Math.ceil(target / 40));
+      var timer = setInterval(function(){
+        start += step;
+        if(start >= target){ start = target; clearInterval(timer); }
+        el.textContent = start.toLocaleString("zh-CN");
+      }, 28);
+    });
+  }
+  if("IntersectionObserver" in window && counters.length){
+    var co = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ runCounters(); co.disconnect(); } });
+    }, { threshold: 0.4 });
+    co.observe(counters[0]);
+  }else{
+    runCounters();
+  }
+
+  /* ========== 点赞 / 收藏 ========== */
+  document.querySelectorAll("[data-hs2-like]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var b = btn.querySelector("b");
+      var num = parseInt((b.textContent || "0").replace(/[^\d]/g, ""), 10) || 0;
+      var active = btn.classList.toggle("liked");
+      if(active){
+        num += 1;
+        btn.firstChild.nodeValue = "♥ ";
+      }else{
+        num = Math.max(0, num - 1);
+        btn.firstChild.nodeValue = "♡ ";
+      }
+      b.textContent = num >= 1000 ? (num/1000).toFixed(1) + "k" : String(num);
+      toast(active ? "已点赞，感谢你的支持" : "已取消点赞");
+    });
+  });
+
+  document.querySelectorAll("[data-hs2-save]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var active = btn.classList.toggle("saved");
+      btn.textContent = active ? "★" : "☆";
+      toast(active ? "已加入收藏，可在个人中心查看" : "已取消收藏");
+    });
+  });
+
+  /* ========== 内容筛选 ========== */
+  var filterBox = document.getElementById("hs2Filter");
+  var videoGrid = document.getElementById("hs2VideoGrid");
+  if(filterBox && videoGrid){
+    filterBox.addEventListener("click", function(e){
+      var btn = e.target.closest("button[data-hs2-filter]");
+      if(!btn) return;
+      filterBox.querySelectorAll("button").forEach(function(b){ b.classList.remove("on"); });
+      btn.classList.add("on");
+      var cat = btn.getAttribute("data-hs2-filter");
+      var shown = 0;
+      videoGrid.querySelectorAll(".hs2-video").forEach(function(card){
+        var match = cat === "all" || card.getAttribute("data-hs2-cat") === cat;
+        card.style.display = match ? "" : "none";
+        if(match) shown++;
+      });
+      toast("已筛选，共 " + shown + " 部内容");
+    });
+  }
+
+  /* ========== 弹窗通用 ========== */
+  var modalMap = {
+    submit: document.getElementById("hs2ModalSubmit"),
+    share: document.getElementById("hs2ModalShare"),
+    feedback: document.getElementById("hs2ModalFeedback"),
+    creator: document.getElementById("hs2ModalCreator")
+  };
+  function openModal(key){
+    var m = modalMap[key];
+    if(!m) return;
+    m.classList.add("on");
+    document.body.style.overflow = "hidden";
+  }
+  function closeAllModals(){
+    Object.keys(modalMap).forEach(function(k){ if(modalMap[k]) modalMap[k].classList.remove("on"); });
+    document.body.style.overflow = "";
+  }
+  document.querySelectorAll("[data-hs2-open]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var key = btn.getAttribute("data-hs2-open");
+      if(key === "share"){
+        openModal("share");
+      }else if(key === "submit"){
+        openModal("submit");
+      }else if(key === "feedback"){
+        openModal("feedback");
+      }
+    });
+  });
+  document.querySelectorAll("[data-hs2-close]").forEach(function(btn){
+    btn.addEventListener("click", closeAllModals);
+  });
+  Object.keys(modalMap).forEach(function(k){
+    var m = modalMap[k];
+    if(!m) return;
+    m.addEventListener("click", function(e){ if(e.target === m) closeAllModals(); });
+  });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeAllModals(); });
+
+  /* ========== 分享 ========== */
+  document.querySelectorAll("[data-hs2-share]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var to = btn.getAttribute("data-hs2-share");
+      toast("已生成" + to + "分享卡片，请前往对应应用粘贴");
+    });
+  });
+  var copyBtn = document.getElementById("hs2CopyLink");
+  if(copyBtn){
+    copyBtn.addEventListener("click", function(){
+      var link = window.location.href.split("#")[0] + "#hs2-top";
+      function fallback(){
+        var ta = document.createElement("textarea");
+        ta.value = link;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        try{ document.execCommand("copy"); }catch(err){}
+        document.body.removeChild(ta);
+        toast("板块链接已复制");
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){
+          toast("板块链接已复制");
+        }).catch(fallback);
+      }else{
+        fallback();
+      }
+    });
+  }
+
+  /* ========== 表单提交 ========== */
+  var submitForm = document.getElementById("hs2SubmitForm");
+  if(submitForm){
+    submitForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      var name = document.getElementById("hs2SName").value.trim();
+      if(!name){ toast("请填写创作者名称"); return; }
+      closeAllModals();
+      submitForm.reset();
+      toast("投稿已提交，我们会在十个工作日内回复");
+    });
+  }
+  var feedbackForm = document.getElementById("hs2FeedbackForm");
+  if(feedbackForm){
+    feedbackForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      closeAllModals();
+      feedbackForm.reset();
+      toast("反馈已收到，感谢你帮助内容生态变得更好");
+    });
+  }
+
+  /* ========== 创作者弹窗 ========== */
+  var creatorName = document.getElementById("hs2CreatorName");
+  var creatorField = document.getElementById("hs2CreatorField");
+  var creatorDesc = document.getElementById("hs2CreatorDesc");
+  var creatorFollow = document.getElementById("hs2CreatorFollow");
+  document.querySelectorAll("[data-hs2-creator]").forEach(function(card){
+    card.addEventListener("click", function(){
+      var raw = card.getAttribute("data-hs2-creator");
+      var name = card.getAttribute("data-hs2-name") || "";
+      var parts = raw.split("|");
+      creatorName.textContent = parts[0] || name;
+      creatorField.textContent = parts[1] || "";
+      creatorDesc.textContent = parts[2] || "";
+      creatorFollow.textContent = "关注该创作者";
+      creatorFollow.disabled = false;
+      openModal("creator");
+    });
+  });
+  if(creatorFollow){
+    creatorFollow.addEventListener("click", function(){
+      creatorFollow.textContent = "已关注 ✓";
+      creatorFollow.disabled = true;
+      toast("关注成功，新作品会第一时间通知你");
+    });
+  }
+
+  /* ========== 回到顶部 ========== */
+  var topBtn = document.getElementById("hs2TopBtn");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 480){
+      topBtn.classList.add("on");
+    }else{
+      topBtn.classList.remove("on");
+    }
+  }, { passive: true });
+  if(topBtn){
+    topBtn.addEventListener("click", function(){
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+})();
+</script>
+</body>
+  </html>
